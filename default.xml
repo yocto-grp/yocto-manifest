@@ -2,8 +2,7 @@
 <manifest>
 
   <default sync-j="4" revision="master"/>
-
-  <remote fetch="git://github.com" name="github"/>
+  <remote fetch="git@github.com" name="github"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
 
@@ -17,6 +16,7 @@
 
   <project remote="github" revision="master" name="yocto-grp/meta-monkey" path="sources/meta-monkey"/>
   <project remote="github" revision="master" name="yocto-grp/yocto-base" path="sources/base">
+    <copyfile dest="README" src="README"/>
     <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 </manifest>
