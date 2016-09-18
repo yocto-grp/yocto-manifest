@@ -2,7 +2,7 @@
 <manifest>
 
   <default sync-j="4" revision="master"/>
-  <remote fetch="git://git.github.com" name="github"/>
+  <remote fetch="git://github.com" name="github"/>
   <remote fetch="git@github.com:yocto-grp" name="yocto-grp"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
@@ -15,8 +15,8 @@
   <project remote="yocto" revision="c9f259a4bf8472dfa3ff75f1c3fcbe5e0ded7aaf" name="meta-fsl-arm" path="sources/meta-fsl-arm" upstream="fido"/>
   <project remote="github" revision="b292f6204912ace18e30b7683748a311c5dfa780" name="Freescale/meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra" upstream="fido"/>
 
-  <project remote="yocto-grp" revision="master" name="meta-monkey" path="sources/meta-monkey"/>
-  <project remote="yocto-grp" revision="master" name="yocto-base" path="sources/base">
+  <project remote="github" revision="master" name="yocto-grp/meta-monkey" path="sources/meta-monkey"/>
+  <project remote="github" revision="master" name="yocto-grp/yocto-base" path="sources/base">
     <copyfile dest="README" src="README"/>
     <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
