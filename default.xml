@@ -17,7 +17,7 @@
 
   <project remote="github" revision="master" name="yocto-grp/meta-monkey" path="sources/meta-monkey"/>
   <project remote="github" revision="master" name="yocto-grp/yocto-base" path="sources/base">
-    <copyfile dest="README" src="README"/>
+    <copyfile dest="README.md" src="README.md"/>
     <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 </manifest>
